@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelsea Violet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+              <a href="index.html"><h1>Kelsea Violet</h1></a>  
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="bg">
+        <section class="about" id="about">
+            <h2>Hi, I'm Kelsea Violet</h2>
+            <p>I am here to showcase my Adobe After Effects work samples!</p>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <h3>Here's some samples of my work!</h3>
+        </section>
+
+        <section class="samples">
+            <h3>Samples</h3>
+            <p>Sample 1</p>
+            <video autoplay loop src="Ad_for_Elf_Makeup_1.mp4"></video>
+            <p>Sample 2</p>
+            <video autoplay loop src="Love at First Sight (Ocean Edition).mp4"></video>
+            <p>Sample 3</p>
+            <video autoplay loop src="Freddy.mp4"></video>
+        </section>
+
+        <section class="contact" id="contact">
+            <h4>If you want to see more of my work</h4>
+            <p>Feel free to contact me at:</p>
+        <a href="tel:+17373521544">(737) 352-1544</a> <br>
+            <a href="mailto:kelsea.violet94@gmail.com">Kelsea.violet94@gmail.com</a>
+        </section>
+    </div>
+    </main>
+    <footer>
+        <p><small>&copy; Kelsea Violet 2024</small></p>
+    </footer>
+
+
+    <!-- JS for Mobile Nav -->
+
+    <script>
+        //JS TO DO
+        //Select Hamburger
+        const hamburger = document.querySelector('.hamburger')
+        //Select nav-menu
+        const navMenu = document.querySelector('.nav-menu')
+        // add event listener
+        hamburger.addEventListener('click', mobileMenu)
+        // navmenu function
+            //toggle active
+            //toggle active
+        function mobileMenu() {
+            hamburger.classList.toggle('active')
+            navMenu.classList.toggle('active')
+        }
+    </script>
+
+
+
+</body>
+</html>
